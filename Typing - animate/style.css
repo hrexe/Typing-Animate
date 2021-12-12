@@ -1,0 +1,54 @@
+body {
+  background: #000;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.typing-demo {
+  width: 36ch;
+  -webkit-animation: typing 4s steps(30), blink 0.5s step-end infinite alternate;
+          animation: typing 4s steps(30), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color: #fff;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/*# sourceMappingURL=style.css.map */
